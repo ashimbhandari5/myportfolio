@@ -62,3 +62,11 @@
 .section {
   @apply min-h-screen px-4 py-16 md:px-8 lg:px-16;
 }
+
+.service-card-hover {
+  @apply hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300;
+}
+
+.work-card-hover {
+  @apply hover:shadow-lg hover:shadow-pink-500/20 transition-all duration-300;
+}
