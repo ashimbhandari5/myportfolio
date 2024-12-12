@@ -20,7 +20,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <div className="grid md:grid-cols-2 gap-12 items-start">
+    <div className="grid lg:grid-cols-2 gap-12 items-start">
       <div className="space-y-8">
         <div>
           <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
@@ -54,13 +54,13 @@ export const ContactForm = () => {
         </div>
       </div>
 
-      <form onSubmit={handleSubmit} className="space-y-6">
+      <form onSubmit={handleSubmit} className="space-y-6 w-full">
         <div>
           <Input
             placeholder="Full Name"
             value={formData.fullName}
             onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-            className="bg-white/5 border-white/10"
+            className="bg-white/5 border-white/10 w-full"
           />
         </div>
         <div>
@@ -69,7 +69,7 @@ export const ContactForm = () => {
             placeholder="Email"
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            className="bg-white/5 border-white/10"
+            className="bg-white/5 border-white/10 w-full"
           />
         </div>
         <div>
@@ -77,7 +77,7 @@ export const ContactForm = () => {
             placeholder="Message"
             value={formData.message}
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-            className="min-h-[150px] bg-white/5 border-white/10"
+            className="min-h-[150px] bg-white/5 border-white/10 w-full"
           />
         </div>
         <Button type="submit" className="w-full bg-gradient-to-r from-pink-500 to-blue-500 hover:opacity-90">
