@@ -81,9 +81,13 @@ export const HeroSection = () => {
         >
           <div className="w-full aspect-square rounded-full bg-gradient-to-r from-red-500/20 to-purple-500/20 blur-3xl absolute -z-10" />
           <img
-            src="/placeholder.svg"
+            src="/lovable-uploads/7aa37732-1068-43cc-ba51-4f8d82984251.png"
             alt="Profile"
-            className="w-full max-w-md mx-auto rounded-2xl"
+            className="w-full max-w-md mx-auto object-contain h-[600px]"
+            style={{
+              maskImage: 'linear-gradient(to bottom, black 80%, transparent 100%)',
+              WebkitMaskImage: 'linear-gradient(to bottom, black 80%, transparent 100%)'
+            }}
           />
         </motion.div>
       </div>
