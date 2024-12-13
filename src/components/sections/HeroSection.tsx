@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-// import { Dribbble, Instagram, Linkedin } from "lucide-react";
 
 export const HeroSection = () => {
   const scrollToContact = () => {
@@ -40,28 +39,12 @@ export const HeroSection = () => {
             <p className="text-lg sm:text-xl text-gray-400 max-w-2xl">
               A passionate{" "}
               <span className="text-red-500">full-stack developer</span>{" "}
-              creating beautiful and functional web experiences
+              creating beautiful and functional web experiences.
             </p>
           </div>
 
           <div className="space-y-6">
-            <div className="flex items-center gap-6 justify-center lg:justify-start">
-              {/* <p className="text-gray-400">Find Me on</p>
-              <div className="flex gap-4">
-                <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer"
-                   className="text-gray-400 hover:text-white transition-colors">
-                  <Dribbble className="w-5 h-5" />
-                </a>
-                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
-                   className="text-gray-400 hover:text-white transition-colors">
-                  <Instagram className="w-5 h-5" />
-                </a>
-                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
-                   className="text-gray-400 hover:text-white transition-colors">
-                  <Linkedin className="w-5 h-5" />
-                </a>
-              </div> */}
-            </div>
+            <div className="flex items-center gap-6 justify-center lg:justify-start"></div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button
@@ -70,12 +53,6 @@ export const HeroSection = () => {
               >
                 Hire Me
               </Button>
-              {/* <Button
-                variant="outline"
-                className="border-white/10 hover:bg-white/5 px-8 py-6 text-lg rounded-full"
-              >
-                Portfolio
-              </Button> */}
             </div>
           </div>
         </motion.div>
@@ -88,9 +65,9 @@ export const HeroSection = () => {
         >
           <div className="w-full aspect-square rounded-full bg-gradient-to-r from-red-500/20 to-purple-500/20 blur-3xl absolute -z-10" />
           <img
-            src="src\pictures\a1.JPG"
+            src="/5.png"
             alt="Profile"
-            className="w-full max-w-md mx-auto object-contain h-[600px]"
+            className=" pt-10 w-half max-w-full mx-full object-contain h-[600px]"
             style={{
               maskImage:
                 "linear-gradient(to bottom, black 80%, transparent 100%)",

@@ -4,13 +4,13 @@ export const WorksSection = () => {
       title: "Futsal Booking WebApp",
       description:
         "A comprehensive booking system for futsal courts with real-time availability and payment integration.",
-      image: "/public/futsal.png",
+      image: "/futsal.png",
     },
     {
       title: "Inventory Management System",
       description:
         "A complete solution for managing inventory with tracking, reporting, and analytics features.",
-      image: "/public/ivm.jpg",
+      image: "/ivm.jpg",
     },
   ];
 

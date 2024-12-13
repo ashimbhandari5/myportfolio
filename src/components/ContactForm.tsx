@@ -71,13 +71,13 @@ export const ContactForm = () => {
   };
   return (
     <div className="grid lg:grid-cols-2 gap-12 items-start">
-      <div className="space-y-8">
+      <div className="space-y-10">
         <div>
-          <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
+          <h2 className="text-5xl font-bold mb-8">Get in Touch</h2>
           <p className="text-gray-400">I'd love to hear from you!</p>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-6">
           <a
             href="https://wa.me/9779861782951"
             target="_blank"
@@ -140,7 +140,7 @@ export const ContactForm = () => {
             onChange={(e) =>
               setFormData({ ...formData, fullName: e.target.value })
             }
-            className="bg-white/5 border-white/10 w-full"
+            className="bg-white/5 border-white/20 w-full"
           />
         </div>
         <div>
@@ -150,7 +150,7 @@ export const ContactForm = () => {
             value={formData.email}
             onChange={handleEmailChange}
             className={cn(
-              "bg-white/5 border-white/10 w-full",
+              "bg-white/5 border-white/20 w-full",
               errors.email && "border-red-500"
             )}
           />
@@ -165,7 +165,7 @@ export const ContactForm = () => {
             onChange={(e) =>
               setFormData({ ...formData, message: e.target.value })
             }
-            className="min-h-[150px] bg-white/5 border-white/10 w-full"
+            className="min-h-[150px] bg-white/5 border-white/20 w-full"
           />
         </div>
         <Button
