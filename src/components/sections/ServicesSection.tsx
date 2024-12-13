@@ -1,4 +1,4 @@
-import { Code2, Palette, Globe } from "lucide-react";
+import { Code2, Palette, Brush } from "lucide-react";
 
 export const ServicesSection = () => {
   const services = [
@@ -15,7 +15,7 @@ export const ServicesSection = () => {
         "Creating intuitive and beautiful user interfaces with focus on user experience and accessibility.",
     },
     {
-      icon: Globe,
+      icon: Brush,
       title: "Graphic Desiging",
       description:
         "Eye-catching designs that embody your brand with style and innovation.",
