@@ -60,7 +60,7 @@
 }
 
 .section {
-  @apply min-h-screen px-4 py-16 md:px-8 lg:px-16;
+  @apply min-h-screen px-4 py-16 md:px-8 lg:px-16 scroll-mt-24;
 }
 
 .service-card-hover {
