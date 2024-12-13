@@ -4,7 +4,7 @@ export const ServicesSection = () => {
   const services = [
     {
       icon: Code2,
-      title: "Web App Development",
+      title: "WebApp Development",
       description:
         "Building robust and scalable web applications using modern technologies and best practices.",
     },
@@ -16,9 +16,9 @@ export const ServicesSection = () => {
     },
     {
       icon: Globe,
-      title: "Website Development",
+      title: "Graphic Desiging",
       description:
-        "Developing responsive and performant websites that deliver exceptional user experiences.",
+        "Eye-catching designs that embody your brand with style and innovation.",
     },
   ];
 
