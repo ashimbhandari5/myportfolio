@@ -71,17 +71,21 @@
   @apply hover:shadow-lg hover:shadow-pink-500/20 transition-all duration-300;
 }
 
-@keyframes gradient-xy {
+.floating-circle {
+  @apply absolute rounded-full bg-red-600;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
   0%, 100% {
-    background-size: 400% 400%;
-    background-position: left top;
+    transform: translateY(0);
   }
   50% {
-    background-size: 200% 200%;
-    background-position: right bottom;
+    transform: translateY(-20px);
   }
 }
 
-.animate-gradient-xy {
-  animation: gradient-xy 15s ease infinite;
+.dot-pattern {
+  background-image: radial-gradient(circle, rgb(255 255 255 / 0.1) 1px, transparent 1px);
+  background-size: 24px 24px;
 }
