@@ -12,7 +12,7 @@ export const AboutSection = () => {
     <section id="about" className="section">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
-          <h2 className=" text-white text-7xl font-bold">About Me</h2>
+          <h2 className=" text-6xl  font-bold text-center mb-12">About Me</h2>
           <p className="text-gray-400 text-xl">
             I'm a passionate developer focused on creating beautiful and
             functional web applications.
