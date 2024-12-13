@@ -11,7 +11,7 @@ export const Navbar = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
       
-      const sections = ['home', 'about', 'works', 'services', 'contact'];
+      const sections = ['home', 'about', 'services', 'works', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -43,17 +43,17 @@ export const Navbar = () => {
   const navItems = [
     { id: 'home', icon: Home },
     { id: 'about', icon: User },
-    { id: 'works', icon: GraduationCap },
     { id: 'services', icon: Settings },
+    { id: 'works', icon: GraduationCap },
     { id: 'contact', icon: Mail }
   ];
 
   return (
     <nav className={cn(
-      "fixed top-0 right-0 w-full z-50 transition-all duration-300 px-4 sm:px-6 py-4",
+      "fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-4 sm:px-6 py-4 flex justify-center",
       isScrolled ? "bg-background/80 backdrop-blur-md border-b border-white/10" : ""
     )}>
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
+      <div className="max-w-7xl w-full flex justify-between items-center">
         <h1 className="text-2xl font-bold gradient-text">Portfolio</h1>
         
         {/* Desktop Navigation */}

@@ -11,12 +11,41 @@ export const ContactForm = () => {
     email: '',
     message: ''
   });
+  const [errors, setErrors] = useState({
+    email: ''
+  });
+
+  const validateEmail = (email: string) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email) {
+      return 'Email is required';
+    }
+    if (!emailRegex.test(email)) {
+      return 'Please enter a valid email address';
+    }
+    return '';
+  };
+
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const email = e.target.value;
+    setFormData({ ...formData, email });
+    setErrors({ ...errors, email: validateEmail(email) });
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const emailError = validateEmail(formData.email);
+    
+    if (emailError) {
+      setErrors({ ...errors, email: emailError });
+      toast.error('Please fix the errors before submitting');
+      return;
+    }
+
     console.log('Form submitted:', formData);
     toast.success('Message sent successfully!');
     setFormData({ fullName: '', email: '', message: '' });
+    setErrors({ email: '' });
   };
 
   return (
@@ -68,9 +97,15 @@ export const ContactForm = () => {
             type="email"
             placeholder="Email"
             value={formData.email}
-            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            className="bg-white/5 border-white/10 w-full"
+            onChange={handleEmailChange}
+            className={cn(
+              "bg-white/5 border-white/10 w-full",
+              errors.email && "border-red-500"
+            )}
           />
+          {errors.email && (
+            <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+          )}
         </div>
         <div>
           <Textarea
