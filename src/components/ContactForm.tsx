@@ -4,6 +4,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { toast } from 'sonner';
 import { Instagram, Facebook, Linkedin, Twitter, Phone, Mail } from 'lucide-react';
+import { cn } from "@/lib/utils";
 
 export const ContactForm = () => {
   const [formData, setFormData] = useState({
