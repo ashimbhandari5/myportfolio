@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { BehanceIcon, DribbbleIcon, InstagramIcon, LinkedinIcon } from "lucide-react";
+import { Dribbble, Instagram, Linkedin } from "lucide-react";
 
 export const HeroSection = () => {
   const scrollToContact = () => {
@@ -41,21 +41,17 @@ export const HeroSection = () => {
             <div className="flex items-center gap-6 justify-center lg:justify-start">
               <p className="text-gray-400">Find Me on</p>
               <div className="flex gap-4">
-                <a href="https://www.behance.net" target="_blank" rel="noopener noreferrer" 
-                   className="text-gray-400 hover:text-white transition-colors">
-                  <BehanceIcon className="w-5 h-5" />
-                </a>
                 <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer"
                    className="text-gray-400 hover:text-white transition-colors">
-                  <DribbbleIcon className="w-5 h-5" />
+                  <Dribbble className="w-5 h-5" />
                 </a>
                 <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
                    className="text-gray-400 hover:text-white transition-colors">
-                  <InstagramIcon className="w-5 h-5" />
+                  <Instagram className="w-5 h-5" />
                 </a>
                 <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
                    className="text-gray-400 hover:text-white transition-colors">
-                  <LinkedinIcon className="w-5 h-5" />
+                  <Linkedin className="w-5 h-5" />
                 </a>
               </div>
             </div>
