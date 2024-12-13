@@ -58,27 +58,55 @@ export const ContactForm = () => {
         </div>
         
         <div className="space-y-4">
-          <div className="flex items-center gap-3 text-gray-400">
+          <a 
+            href="https://wa.me/1234567890" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="flex items-center gap-3 text-gray-400 hover:text-green-500 transition-colors"
+          >
             <Phone className="w-5 h-5" />
             <span>+1 234 567 890</span>
-          </div>
-          <div className="flex items-center gap-3 text-gray-400">
+          </a>
+          <a 
+            href="mailto:contact@example.com" 
+            className="flex items-center gap-3 text-gray-400 hover:text-blue-500 transition-colors"
+          >
             <Mail className="w-5 h-5" />
             <span>contact@example.com</span>
-          </div>
+          </a>
         </div>
 
         <div className="flex gap-4">
-          <a href="#" className="text-gray-400 hover:text-white transition-colors">
+          <a 
+            href="https://instagram.com/example" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-gray-400 hover:text-pink-500 transition-colors"
+          >
             <Instagram className="w-6 h-6" />
           </a>
-          <a href="#" className="text-gray-400 hover:text-white transition-colors">
+          <a 
+            href="https://facebook.com/example" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-gray-400 hover:text-blue-600 transition-colors"
+          >
             <Facebook className="w-6 h-6" />
           </a>
-          <a href="#" className="text-gray-400 hover:text-white transition-colors">
+          <a 
+            href="https://linkedin.com/in/example" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-gray-400 hover:text-blue-500 transition-colors"
+          >
             <Linkedin className="w-6 h-6" />
           </a>
-          <a href="#" className="text-gray-400 hover:text-white transition-colors">
+          <a 
+            href="https://twitter.com/example" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-gray-400 hover:text-blue-400 transition-colors"
+          >
             <Twitter className="w-6 h-6" />
           </a>
         </div>
