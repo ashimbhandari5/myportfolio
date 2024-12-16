@@ -29,7 +29,7 @@ export const WorksSection = () => {
               <img
                 src={work.image}
                 alt={work.title}
-                className="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-110"
+                className="w-full h-full transform transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                 <h3 className="text-xl font-bold text-white">{work.title}</h3>
@@ -43,13 +43,13 @@ export const WorksSection = () => {
           {works.map((work) => (
             <div
               key={work.title}
-              className="p-6 sm:p-8 rounded-2xl bg-white/5 border border-white/10 transform transition-all duration-300 hover:scale-105 hover:bg-white/10 hover:shadow-xl cursor-pointer group"
+              className="p-6 sm:p-8 rounded-2xl bg-white/5 border border-white/10 transform transition-all duration-300 cursor-pointer group"
             >
-              <h3 className="text-xl sm:text-2xl font-bold mb-4 group-hover:text-blue-500 transition-colors">
+              <h3 className="text-xl sm:text-2xl font-bold mb-4 ">
                 {work.title}
               </h3>
               <p className="text-gray-400">{work.description}</p>
-              <div className="w-full h-1 bg-gradient-to-r from-pink-500 via-blue-500 to-green-500 mt-4 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+              <div className="w-full h-1 " />
             </div>
           ))}
         </div>
