@@ -34,10 +34,10 @@ export const AboutSection = () => {
         <div className="space-y-0">
           <div className="flex items-center gap-6 justify-center lg:justify-start"></div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <div className="flex flex-col sm:flex-row gap- justify-center lg:justify-start">
             <button
               onClick={handleDownload}
-              className="bg-red-600 hover:bg-red-700 text-white px-8 py-6 text-lg rounded-full"
+              className="bg-red-600 hover:bg-red-700 text-white px-9 py-3 text-lg rounded-full"
             >
               Download CV
             </button>
