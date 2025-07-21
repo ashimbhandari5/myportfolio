@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 export const AboutSection = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/cv.pdf"; // Path to your CV in the `public` folder
+    link.href = "/public/cv.pdf"; // Path to your CV in the `public` folder
     link.download = "cv.pdf"; // Suggested file name
     link.click();
   };
