@@ -3,12 +3,12 @@ export const WorksSection = () => {
     {
       image: "/futsal.png",
       title: "Futsal Booking System",
-      link: "https://github.com/yourusername/futsal-booking", // replace with your repo/url
+      link: "https://github.com/ashimbhandari5/Fustal-Booking-WebApp", // replace with your repo/url
     },
     {
       image: "/ivm.jpg",
       title: "Inventory Management System",
-      link: "https://github.com/yourusername/inventory-system", // replace with your repo/url
+      link: "https://github.com/ashimbhandari5/Inventory-Management-System", // replace with your repo/url
     },
   ];
 
@@ -29,7 +29,7 @@ export const WorksSection = () => {
                 href={work.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" w-full overflow-hidden rounded-2xl group"
+                className=" w-full h-[360px] overflow-hidden rounded-2xl group"
               >
                 <img
                   src={work.image}
